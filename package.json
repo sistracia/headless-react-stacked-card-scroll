@@ -1,8 +1,9 @@
 {
   "name": "@sist/react-stacked-card",
-  "version": "0.0.0",
-  "description": "Headless React component for stacked card on scroll",
+  "version": "0.0.1",
+  "description": "Headless React component for a stacked card on scroll",
   "repository":{
+    "type": "git",
     "url": "https://github.com/sistracia/headless-react-stacked-card-scroll"
   },
   "type": "module",
@@ -32,11 +33,11 @@
   "license": "MIT",
   "packageManager": "pnpm@10.11.1",
   "devDependencies": {
-    "@types/react": "^16.14.65",
+    "@types/react": "16.14.65",
     "tsup": "8.5.0",
     "typescript": "5.8.3"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^16.8 || ^17 || ^18 || ^19"
   }
 }
