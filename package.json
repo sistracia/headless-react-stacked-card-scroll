@@ -1,5 +1,5 @@
 {
-  "name": "headless-react-stacked-card-scroll",
+  "name": "@sist/react-stacked-card",
   "version": "1.0.0",
   "description": "Headless React component for stacked card on scroll",
   "type": "module",
