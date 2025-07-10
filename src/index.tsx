@@ -67,7 +67,7 @@ export function StackedCards<TAs extends React.ElementType = "div">({
         ref={componentRef}
         {...restProps}
         style={{
-          "--top-anchor": "0",
+          "--top-anchor": topSticky,
           "--top-sticky": topSticky,
           ...restProps.style,
         }}
