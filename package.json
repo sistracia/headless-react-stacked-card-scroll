@@ -1,6 +1,6 @@
 {
   "name": "@sist/react-stacked-card",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Headless React component for a stacked card on scroll",
   "repository": {
     "type": "git",
