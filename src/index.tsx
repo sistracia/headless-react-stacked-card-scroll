@@ -26,16 +26,10 @@ export function StackedCards<TAs extends React.ElementType = "div">({
         return;
       }
 
-      const computedStyle = window.getComputedStyle(headerRef.current);
       const headerHeight = headerRef.current.offsetHeight;
-
-      const marginTop = parseFloat(computedStyle.marginTop);
-      const marginBottom = parseFloat(computedStyle.marginBottom);
-
-      const totalHeight = headerHeight + marginTop + marginBottom;
       componentRef.current.style.setProperty(
         "--top-sticky",
-        `calc(var(--top-anchor) + ${totalHeight}px)`,
+        `calc(var(--top-anchor) + ${headerHeight}px)`,
       );
     };
 
