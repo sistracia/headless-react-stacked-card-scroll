@@ -12,7 +12,7 @@ export type StackedCardsProps<TAs extends React.ElementType> = {
 
 export function StackedCards<TAs extends React.ElementType = "div">({
   as: asProp,
-  topSticky = "",
+  topSticky: topStickyProp = "0px",
   children,
   ...restProps
 }: StackedCardsProps<TAs> & React.ComponentPropsWithoutRef<TAs>) {
@@ -56,6 +56,10 @@ export function StackedCards<TAs extends React.ElementType = "div">({
       resizeObserver.disconnect();
     };
   }, []);
+
+  const topSticky = Number.isNaN(Number(topStickyProp))
+    ? topStickyProp
+    : `${topStickyProp}px`;
 
   return (
     <StackedHeaderContext.Provider value={headerRef}>
