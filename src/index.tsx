@@ -2,13 +2,13 @@
 
 import { createContext, useContext, useEffect, useRef } from "react";
 
-type StackedCardsProps<TAs extends React.ElementType> = {
+const StackedHeaderContext =
+  createContext<React.RefObject<HTMLElement | null> | null>(null);
+
+export type StackedCardsProps<TAs extends React.ElementType> = {
   as?: TAs;
   topSticky?: string;
 };
-
-const StackedHeaderContext =
-  createContext<React.RefObject<HTMLElement | null> | null>(null);
 
 export function StackedCards<TAs extends React.ElementType = "div">({
   as: asProp,
@@ -74,7 +74,7 @@ export function StackedCards<TAs extends React.ElementType = "div">({
   );
 }
 
-type StackedHeaderProps<TAs extends React.ElementType> = {
+export type StackedHeaderProps<TAs extends React.ElementType> = {
   as?: TAs;
 };
 
