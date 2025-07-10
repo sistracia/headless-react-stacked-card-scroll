@@ -3,11 +3,11 @@
 ## Install
 
 ```bash
-pnpm i @sist/react-stacked-card
+pnpm add @sist/react-carousel
 # or
-npm i @sist/react-stacked-card
+npm install @sist/react-carousel
 # or
-npm i @sist/react-stacked-card
+yarn add @sist/react-carousel
 # or other package manager equivalent
 ```
 
