@@ -89,16 +89,5 @@ export function StackedHeader<TAs extends React.ElementType = "div">({
   const Component = asProp || "div";
   const headerRef = useContext(StackedHeaderContext);
 
-  return (
-    <Component
-      ref={headerRef}
-      {...restProps}
-      style={
-        {
-          "--top": headerRef ? "var(--top-sticky)" : undefined,
-          ...restProps.style,
-        } as React.CSSProperties
-      }
-    />
-  );
+  return <Component ref={headerRef} {...restProps} />;
 }
